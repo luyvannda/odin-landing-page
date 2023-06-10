@@ -110,10 +110,17 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
 .box {
   border: 3px solid #3882F6;
   border-radius: 6%;
   background: white;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
