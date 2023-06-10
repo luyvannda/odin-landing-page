@@ -11,6 +11,10 @@ main {
   color: #F9FAF8;
 }
 
+main {
+  height: 325px;
+}
+
 .head-container {
   display: flex;
   flex-direction: row;
@@ -42,8 +46,53 @@ a {
   font-size: 18px;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+}
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.left-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 360px;
+  flex: 1 1 1;
+  margin-bottom: 60px;
+}
+
+#hero-main-text {
+  margin-bottom: -15px;
+}
+
+.right-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-shrink: 1;
+}
+
+#main-img {
+  display: flex;
+  justify-content: flex-end;
+  flex: auto;
+  height: min-content;
+  width: 280px;
+}
+
+.main-img-caption {
+  font-size: 12px;
+  text-align: center;
+}
 
 .box {
   border: 3px solid #3882F6;
