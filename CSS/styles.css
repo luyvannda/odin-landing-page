@@ -122,10 +122,61 @@ h2 {
   color: #1F2937;
 }
 
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container>figure {
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex: 1 1 1;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+
+.box-container>figure>figcaption {
+  text-align: center;
+  font-size: 18px;
+}
+
 .box {
   border: 3px solid #3882F6;
   border-radius: 6%;
   background: white;
-  width: 100px;
-  height: 100px;
+  height: 120px;
+}
+
+section.quote-container {
+  background-color: #E5E7EB;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+}
+
+q {
+  quotes: none;
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 300;
+  padding: 65px 0 0 0;
+  margin: 10px 130px;
+  text-align: justify;
+}
+
+cite {
+  text-align: right;
+  margin-right: 145px;
+  padding-bottom: 60px;
 }
