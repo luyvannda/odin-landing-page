@@ -187,7 +187,7 @@ cite {
   align-items: center;
   gap: 6rem;
   background-color: #3882F6;
-  margin: 60px auto 60px auto;
+  margin: 75px auto 75px auto;
   height: 80px;
   width: 85%;
   border: 1px solid #3882F6;
@@ -228,4 +228,30 @@ cite {
 #second-button:hover {
   background-color: #82c184;
   cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer-left {
+  margin-left: 1rem;
+}
+
+
+.footer-right {
+  margin-right: 1rem;
+}
+
+.footer-right a {
+  color: rgb(249, 196, 249);
+}
+
+.footer-right a:hover {
+  color: green;
 }
