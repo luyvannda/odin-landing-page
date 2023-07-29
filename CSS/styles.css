@@ -1,7 +1,7 @@
 :root {
   --main-white: #F9FAF8;
   --main-black: #1F2937;
-  --main-gray: #E5E7EB;
+  --main-gray: #e5e7ebed;
   --main-blue: #3882F6;
   --btn-hover-green: #82c184;
 }
@@ -75,8 +75,8 @@ a {
 .main-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  margin-top: 1.8rem;
+  gap: 3rem;
 }
 
 .left-main {
@@ -97,6 +97,7 @@ a {
 }
 
 #first-button {
+  margin-top: 0.5rem;
   padding: 4px 18px;
   background-color: var(--main-blue);
   color: var(--main-white);
@@ -135,42 +136,47 @@ a {
   text-align: center;
 }
 
+.call-to-action {
+  margin-top: 2rem;
+}
+
 h2 {
   text-align: center;
   font-size: calc(2.25rem + (100vw - 320px) * 0.001);
   font-weight: bolder;
   color: var(--main-black);
+  margin-bottom: 1rem;
 }
 
-.box-container {
-  display: flex;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
-.box-container>figure {
-  width: 120px;
-  height: auto;
+.grid-container>figure {
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  flex: 1 1 1;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
+  gap: 0.5rem;
 }
 
 
-.box-container>figure>figcaption {
+.grid-container>figure>figcaption {
   text-align: center;
-  font-size: 18px;
+  font-size: calc(1.125rem + (100vw - 320px) * 0.0008);
 }
 
-.box {
+.grid {
   border: 3px solid var(--main-blue);
   border-radius: 6%;
   background: var(--main-white);
-  height: 120px;
+  width: 200px;
+  height: 200px;
 }
 
 section.quote-container {
@@ -185,14 +191,17 @@ section.quote-container {
 
 }
 
-q {
+.quote-container q {
   quotes: none;
-  font-size: calc(2rem + (100vw - 320px) * 0.05);
   color: #1F2937;
   font-weight: 300;
   padding: 65px 0 0 0;
   margin: 10px 130px;
   text-align: justify;
+}
+
+.quote {
+  font-size: calc(2.25rem + (100vw - 320px) * 0.0008);
 }
 
 cite {
