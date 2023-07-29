@@ -285,11 +285,46 @@ section.quote-container {
   font-size: calc(2.25rem + (100vw - 320px) * 0.0008);
 }
 
+
 cite {
   text-align: right;
   margin-right: 145px;
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 650px) {
+  .quote-container q {
+    margin: 10px 3rem;
+  }
+
+  .quote {
+    font-size: calc(1.8rem + (100vw - 320px) * 0.0008);
+  }
+
+  cite {
+    margin-right: 3rem;
+  }
+
+}
+
+
+@media screen and (max-width: 450px) {
+  .quote-container q {
+    margin: 10px 1rem;
+  }
+
+  .quote {
+    font-size: calc(1.5rem + (100vw - 320px) * 0.0008);
+  }
+
+  cite {
+    margin-right: 1rem;
+  }
+
+}
+
+
+
 
 .low-action-container {
   display: flex;
