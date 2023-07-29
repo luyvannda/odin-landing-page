@@ -44,6 +44,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-self: center;
+  margin: 1rem;
 }
 
 .logo {
@@ -51,7 +52,7 @@ main {
 }
 
 #head-logo-text {
-  font-size: 24px;
+  font-size: calc(1.5rem + (100vw - 320px) * 0.0008);
   color: var(--main-white);
 }
 
@@ -67,14 +68,9 @@ main {
 a {
   text-decoration: none;
   color: var(--main-gray);
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bolder;
-  color: var(--main-white);
-}
 
 .main-container {
   display: flex;
@@ -94,7 +90,10 @@ h1 {
 }
 
 #hero-main-text {
-  margin-bottom: -15px;
+  font-size: calc(2.5rem + (100vw - 320px) * 0.001);
+  font-weight: bolder;
+  color: var(--main-white);
+  margin-bottom: 0;
 }
 
 #first-button {
@@ -132,13 +131,13 @@ h1 {
 }
 
 .main-img-caption {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 
 h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: calc(2.25rem + (100vw - 320px) * 0.001);
   font-weight: bolder;
   color: var(--main-black);
 }
@@ -188,7 +187,7 @@ section.quote-container {
 
 q {
   quotes: none;
-  font-size: 36px;
+  font-size: calc(2rem + (100vw - 320px) * 0.05);
   color: #1F2937;
   font-weight: 300;
   padding: 65px 0 0 0;
@@ -223,7 +222,7 @@ cite {
   display: flex;
   flex-direction: column;
   color: var(--main-white);
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .low-action-text>h3 {
