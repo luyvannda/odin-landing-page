@@ -323,9 +323,6 @@ cite {
 
 }
 
-
-
-
 .low-action-container {
   display: flex;
   justify-content: center;
@@ -341,21 +338,50 @@ cite {
   flex: 1 1 1;
 }
 
+@media screen and (max-width: 825px) {
+  .low-action-container {
+    gap: 3rem;
+  }
+}
 
+@media screen and (max-width: 750px) {
+  .low-action-container {
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .low-action-container {
+    gap: 0;
+    flex-direction: column;
+    height: max-content;
+  }
+}
 
 .low-action-text {
   display: flex;
   flex-direction: column;
   color: var(--main-white);
-  font-size: 1.125rem;
+
 }
 
-
+.low-action-text h3 {
+  font-size: 1.25rem;
+}
 
 .low-action-text>p {
   padding-bottom: 5px;
 }
 
+
+@media screen and (max-width: 650px) {
+
+  .low-action-text h3,
+  .low-action-text p {
+    text-align: center;
+  }
+}
 
 .low-action-button {
   display: flex;
